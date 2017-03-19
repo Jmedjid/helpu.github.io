@@ -1,101 +1,123 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="HelpU : Application d'entraide entre étudiant">
+<head>
+  <title>VBPMN / Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VBPMN Framework">
+  <meta name="keywords" content="bpmn, formal modelling, validation, verification, business process, CADP">
+  <meta name="author" content="VBPMN Team">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font-Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/verchor-template.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/HelpU/assets/css/style.css?v=48e8400692c48b52c6d08a7d1d80da866b41b031">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
 
-    <title>HelpU</title>
-  </head>
+<body>
+  <div><span class="viewongithub"><a href="https://github.com/pascalpoizat/vbpmn" target="_blank">View on GitHub</a></span></div>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="index.html">VBPMN Framework</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="tour.html"><i class="fa fa-video-camera"></i> Tour</a></li>
+          <li><a href="documentation.html"><i class="fa fa-archive"></i> Documentation</a></li>
+          <li><a href="downloads.html"><i class="fa fa-arrow-circle-o-down"></i> Downloads</a></li>
+          <li><a href="about.html"><i class="fa fa-group"></i> About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>VBPMN Framework</h1>
+      <p class="lead">VBPMN supports <span class="text-primary">formal modelling</span> and
+        <span class="text-primary">automated analysis</span> of business processes using formal verification tools. It features
+        a web interface for <span class="text-primary">comparing </span> BPMN 2.0 models.</p>
+      <a class="btn btn-lg btn-primary" href="downloads/transformation.war" role="button"><i class="fa
+      fa-flag fa-2x pull-left"></i>Download VBPMN<br />
+      Version 1.0</a>
+      <a class="btn btn-lg btn-info" href="downloads/samples.zip" role="button"><i class="fa fa-archive
+      fa-2x pull-left"></i>Download Samples<br /> BPMN 2.0</a>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h4><i class="fa fa-magic"></i> Click-and-Play Process Verification</h4>
+        Compare and verify your business process models in a few clicks! Simply upload your process models to check for equivalence.
+        VBPMN does the job of automated analysis and formal verification behind the scenes and displays the results.
+      </div>
 
-  <body>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h4><i class="fa fa-retweet"></i> Instant Feedback</h4>
+        When you compare the models, get instant feedback through a counterexample in case of a comparison mismatch. Use the counterexample
+        to correct and refine the models.
+      </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Jmedjid/HelpU">View on GitHub</a>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h4><i class="fa fa-stethoscope"></i> Comprehensive Analysis</h4>
+        VBPMN provides a comprehensive platform for comparing models. Compare all the elements of the model or only selected elements.
+        Check for specific properties like deadlock freedom, cycle etc.
+      </div>
 
-          <h1 id="project_title">HelpU</h1>
-          <h2 id="project_tagline">Application d'entraide entre étudiant</h2>
+    </div>
+    <div class="row">
 
-          
-        </header>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h4><i class="fa fa-copy"></i> Model-driven Formal Engineering
+        </h4>
+        VBPMN follows a two step model-driven aproach for business process verification: Process models undergo model to model transformation
+        to an intermediate model, PIF. In the backend, PIF models are transformed into formal models to perform analysis
+        using top-notch formal verification tools.
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <h4><i class="fa fa-check-square-o"></i> Supported languages and notations</h4>
+        VBPMN supports comparison of BPMN 2.0 compliant models. In the backend, it supports verification using the LOTOS NT formal
+        notation and the CADP state-of-the-art verification tool.
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h4><i class="fa fa-leaf"></i> Extend</h4>
+        In addition to the web interface, VBPMN framework provides REST API for clients to build custom interfaces suited to their
+        needs.
+      </div>
+
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1 id="helpu">HelpU</h1>
+    <hr>
 
-<p><a href="https://coveralls.io/github/davidmeimoun/HelpU?branch=dev"><img src="https://coveralls.io/repos/github/davidmeimoun/HelpU/badge.svg?branch=dev" alt="Coverage Status" /></a>
-<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" /></a>
-<a href="https://travis-ci.org/davidmeimoun/HelpU"><img src="https://travis-ci.org/davidmeimoun/HelpU.svg?branch=dev" alt="Build Status" /></a>
-<a href="https://www.codacy.com/app/davidmeimoun/HelpU?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=davidmeimoun/HelpU&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/04ee8982e2d84168b884aa05fb800abf" alt="Codacy Badge" /></a>
-<a href="https://badge.fury.io/gh/davidmeimoun%2Fhelpu"><img src="https://badge.fury.io/gh/davidmeimoun%2Fhelpu.svg" alt="GitHub version" /></a></p>
-
-<p>HelpU est une application d’<strong>entraide entre étudiants</strong>.</p>
-
-<p>Elle permet aux étudiants d’aider ou bien de se faire aider en leur donnant la possibilité de :</p>
-<ul>
-  <li>recevoir des <strong>cours individuels</strong>,</li>
-  <li>recevoir des <strong>cours groupés</strong>,</li>
-  <li>récupérer des <strong>fiches de cours</strong>, 
- le tout venant d’étudiants plus compétents dans la/les  matière(s) en question.</li>
-</ul>
+    <footer>
+      <p class="pull-right"><a href="index.html#">Back to top</a></p>
+      <p>&copy; 2016 VBPMN Team</a>
+      </p>
+    </footer>
+  </div>
+  <!-- /container -->
 
 
-<h2 id="last-changes-100-alpha1">Last Changes 1.0.0-alpha.1</h2>
-<ul>
-  <li>Application Fonctionnel</li>
-  <li>Ajout d’une partie profil</li>
-  <li>Ajout de la partie Recherche d’un Helper</li>
-  <li>Insertion de la base de donnée des matières de Nanterre Université</li>
-</ul>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
 
-<h2 id="last-changes-020">Last Changes 0.2.0</h2>
-<ul>
-  <li>ajout de la première version de la messagerie</li>
-  <li>ajout de test unitaire graphique</li>
-</ul>
-
-<h2 id="installation">Installation</h2>
-
-<p>HelpU utilise android sdk version 25.0.2. Gradle télécharge automatiquement le sdk si vous avez déjà accepté les licences avec le SDK manager et que soit :</p>
-
-<ul>
-  <li>votre variable d’environnement ANDROID_HOME est présente</li>
-  <li>un fichier local.properties est présent avec le chemin vers votre sdk local.</li>
-</ul>
-
-<p>Sinon vous pouvez télécharger le sdk grâce au sdk manager disponible https://developer.android.com/studio/index.html et configurer une variable ANDROID_HOME</p>
-
-<h2 id="authors">Authors</h2>
-
-<ul>
-  <li>Mamadou Baba Makadji</li>
-  <li>David Meimoun</li>
-  <li>Joan Medjid</li>
-</ul>
-
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        
-        <p class="copyright">HelpU maintained by <a href="https://github.com/Jmedjid">Jmedjid</a></p>
-        
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
-
-  </body>
 </html>
